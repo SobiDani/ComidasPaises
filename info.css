@@ -1,43 +1,38 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
 body {
-  scroll-behavior: smooth;
+  background-image: url(./assetsd/comidas\ foto\ fondo);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./assetsd/comidas\ foto\ fondo);
+
+  color: white;
+
 }
 
-.pais {
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 3% 0 7% 0;
+p {
+  margin: 1% 3%;
+  text-align: justify;
+ font-size: 1.3rem;
+
 }
 
-.texto {
-  width: 30em;
-  margin-bottom: 4%;
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 3%;
+  font-size: 2rem;
 }
 
-/* .pais1{
-    background-image: ;
-} */
+section{
 
-.pais > img {
-  height: 20em;
-  padding: 0 5%;
+    margin-bottom: 3%;
 }
 
-.comida > img {
-  display: flex;
-  height: 1em;
-}
 /*footer*/
 
 footer {
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
