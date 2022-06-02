@@ -1,16 +1,13 @@
 *{
-  font-family:font-family: 'Montserrat', sans-serif; 
+font-family: 'Montserrat', sans-serif; 
   
-
-
-
-
 }
 
 body {
   background-image: url(./assetsd/comidas\ foto\ fondo);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: cover;
+  background-attachment: fixed;
+  background-size:cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./assetsd/comidas\ foto\ fondo);
 
@@ -33,7 +30,7 @@ h2 {
 }
 
 section {
-  margin-bottom: 3%;
+  margin-bottom: 4%;
 }
 
 /*footer*/
@@ -52,6 +49,7 @@ footer {
 .sociales {
   display: flex;
   flex-direction: row;
+
   justify-content: center;
   align-items: center;
 
@@ -60,6 +58,7 @@ footer {
 
 img {
   width: 25%;
+  min-width: 35px;
 }
 .copy {
   margin-left: 8%;
@@ -79,4 +78,45 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+
 }
+
+@media screen and (max-width:768px) {
+  .todofooter{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .sociales{
+  display: flex;
+  flex-direction: row;
+ }
+  footer{
+    min-height: fit-content;
+    margin-bottom: 15%;
+
+    display: flex;
+    flex-direction: column;
+  
+   }
+   .adicional{
+    display: flex;
+    flex-direction: column;
+
+    
+   }
+   a{
+     font-size: 0.8rem;
+   }
+   .copy{
+     font-size: 0.6rem;
+   }
+   
+}
+
+
+
+
+
+
+

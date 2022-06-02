@@ -79,3 +79,40 @@ a {
   flex-direction: row;
   align-items: center;
 }
+
+
+
+@media screen and (max-width:768px) {
+  .todofooter{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .sociales{
+  display: flex;
+  flex-direction: row;
+ }
+  footer{
+    min-height: fit-content;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+  
+   }
+   .adicional{
+    display: flex;
+    flex-direction: column;
+
+   }
+   a{
+     font-size: 0.8rem;
+   }
+   .copy{
+     font-size: 0.6rem;
+   }
+   
+}
+
+
+
+
