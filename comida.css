@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  font-family:font-family: 'Montserrat', sans-serif; 
 }
 
 body {
@@ -70,7 +71,7 @@ img {
 
 a {
   padding: 3%;
-  color: white;
+  color: red;
 }
 
 .todofooter {
