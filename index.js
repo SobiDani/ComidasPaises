@@ -1,4 +1,4 @@
-window.sr = ScrollReveal();
+/* window.sr = ScrollReveal();
   sr.reveal('.gallery', {
     reset: true,
     origin: 'bottom',
@@ -106,4 +106,4 @@ window.sr = ScrollReveal();
     duration: 2500,
     delay:200,
   
-  });
+  }); */

@@ -71,6 +71,7 @@ const getPaises = async () => {
 
         cardDiv$$.classList.add(`pais${i+1}`)
         cardDiv$$.classList.add(`headline`)
+        cardDiv$$.setAttribute("id",`idPais${i+1}`);
         cardDiv$$.classList.add(`pais`)
         comidaCardDiv$$.classList.add(`comidaCard`)
 

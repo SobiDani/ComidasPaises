@@ -5,14 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./comida.css">
-    <script src="./comida.js" defer></script>
+    
     <script src="./scrollreveal.js"></script>
     <title>Document</title>
 </head>
+
+
+<header>
+    <img src="https://i.ibb.co/5hm5TPx/diversidad-gastron-mica.png" alt="logoHeader" class="navLogo" />
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#idPais1">Japón</a>
+        </li>
+        <li>
+          <a href="#idPais2">Finlandia</a>
+        </li>
+        <li>
+          <a href="#idPais3">Venezuela</a>
+        </li>
+        <li>
+          <a href="#idPais4">Perú</a>
+        </li>
+        <li>
+          <a href="#idPais5">India</a>
+        </li>
+        <li>
+          <a href="#idPais6">EE.UU</a>
+        </li>
+        <li>
+          <a href="#idPais7">Portugal</a>
+        </li>
+        <li>
+          <a href="#idPais8">Ecuador</a>
+        </li>
+        <li>
+          <a href="#idPais9">México</a>
+        </li>
+        <li>
+          <a href="#idPais10">Italia</a>
+        </li>
+        <li>
+          <a href="#idPais11">España</a>
+        </li>
+        <li>
+          <a href="#idPais12">Argentina</a>
+        </li>
+      </ul>
+    </nav>
+    <img src="./assets/menu.png alt="menu-icon" class="menuIcon">
+  </header>
+
+
+
 <body>
     <p>e</p>
-    <div class="gallery">
-    <section ></section>
+    <div >
+    <section class="gallery"></section>
 </div>
 <div>
     <section class="gallery2"></section>
@@ -52,11 +104,12 @@
 
     <script>
         ScrollReveal({
+            reset: true,
             distance: '600px',
-            duration: 2500,
+            duration: 2000,
             delay:200
         })
-        ScrollReveal().reveal('.gallery' ,{delay: 200, origin: 'left'});
+        ScrollReveal().reveal('.gallery' ,{delay: 200, origin: 'bottom'});
         ScrollReveal().reveal('.gallery2' ,{delay: 200, origin: 'left'});
         ScrollReveal().reveal('.gallery3' ,{delay: 200, origin: 'right'});
         ScrollReveal().reveal('.gallery4' ,{delay: 200, origin: 'left'});
@@ -68,8 +121,8 @@
         ScrollReveal().reveal('.gallery10' ,{delay: 200, origin: 'left'});
         ScrollReveal().reveal('.gallery11' ,{delay: 200, origin: 'rigth'});
         ScrollReveal().reveal('.gallery12' ,{delay: 200, origin: 'left'});
-
-
     </script>
+
+<script src="./comida.js" defer></script>
 </body>
 </html>
