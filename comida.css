@@ -3,23 +3,43 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+
 }
+
+
+h2, h3, p{
+    color: rgb(125, 240, 255);
+    text-shadow: 0 0 8px #5efcff;
+}
+
+
 
 body{
-    scroll-behavior: smooth;
+
+    justify-content: center;
+    background-image: url("./assets/1914852676-huge.jpeg");
+    background-position: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
-.pais{
-    height: 100vh;
+.comidaCard{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3% 0 7% 0;
 
 }
 
+.pais{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.2% 0 7% 0;
+}
+
 .texto{
-    width: 30em;
+    max-width:30em;
+ 
     margin-bottom: 4%
 }
 
@@ -28,11 +48,29 @@ body{
 } */
 
 .pais > img{
-    height: 20em;
-    padding: 0 5%;
+    width: 23%;
+    min-width: 20em;
+    margin: 2% 2% 6% 2%;
+}
+
+.paisDerecha{
+    display: flex;
+    justify-content: end;
+}
+
+
+.comida{
+    width: 30%;
+    min-width: 400px;
+    margin: 0 2% 1% 2%;
 }
 
 .comida > img{
     display: flex;
-    height: 15em;
+   max-width: 85%;
+   min-width: 10em;
+}
+
+#idpais{
+    background-color: black;
 }
