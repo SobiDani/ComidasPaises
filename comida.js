@@ -1,6 +1,5 @@
 const paisesGallery$$ = document.querySelector(".gallery");
 const paisesURL = 'https://data-base-comidas.vercel.app/paises';
-/* const miInput$$ = document.querySelector('') */
 
 
 const getPaises = async () => {
@@ -10,15 +9,13 @@ const getPaises = async () => {
   let nombre = [];
   for (i = 0; i < PaisesJSON.pais.length; i++) {
     const cardDiv$$ = document.createElement('div');
+    const comidaCardDiv$$ = document.createElement('div');
     const titulo$$ = document.createElement('h2');
     const image$$ = document.createElement('img');
 
         titulo$$.textContent = PaisesJSON.pais[i].nombre;
         image$$.src = PaisesJSON.pais[i].imagen;
         image$$.alt = PaisesJSON.pais[i].imagen;
-
-        cardDiv$$.appendChild(titulo$$);
-        cardDiv$$.appendChild(image$$);
 
         for (let y = 0; y < PaisesJSON.pais[i].comidas.length; y++) {
             const comidaDiv$$ = document.createElement('div');
@@ -39,17 +36,35 @@ const getPaises = async () => {
             comidaDiv$$.appendChild(comidaImage$$);
             comidaDiv$$.appendChild(comidaDecripcion$$);
             comidaDiv$$.appendChild(comidaIngredientes$$);
-            cardDiv$$.appendChild(comidaDiv$$)
+            comidaCardDiv$$.appendChild(comidaDiv$$)
 
-
+            comidaDecripcion$$.classList.add(`texto`)
+            comidaIngredientes$$.classList.add(`texto`)
+            comidaDiv$$.classList.add(`comida`)
+            comidaDiv$$.classList.add(`comida${i}${y+1}`)
 
         }
 
+        if(i % 2 == 0){
+            cardDiv$$.classList.add(`paisIzquierda`)
+            cardDiv$$.appendChild(image$$);
+            /*cardDiv$$.appendChild(titulo$$);*/
+        }
+        else{
+            cardDiv$$.classList.add(`paisDerecha`)
+            /* cardDiv$$.appendChild(titulo$$); */
+            cardDiv$$.appendChild(image$$);
+
+        }
+
+        cardDiv$$.classList.add(`pais${i+1}`)
+        cardDiv$$.classList.add(`pais`)
+        cardDiv$$.setAttribute("id",`idPais${i+1}`);
+        comidaCardDiv$$.classList.add(`comidaCard`)
+
+        cardDiv$$.appendChild(comidaCardDiv$$)
         paisesGallery$$.appendChild(cardDiv$$)
   }
 
 };
 getPaises();
-
-/* const paintPaises = (paises) => {
-  const paisesHTML = paises. */
