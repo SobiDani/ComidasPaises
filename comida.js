@@ -1,6 +1,5 @@
 const paisesGallery$$ = document.querySelector(".gallery");
 const paisesURL = 'https://data-base-comidas.vercel.app/paises';
-/* const miInput$$ = document.querySelector('') */
 
 
 const getPaises = async () => {
@@ -16,6 +15,7 @@ const getPaises = async () => {
         titulo$$.textContent = PaisesJSON.pais[i].nombre;
         image$$.src = PaisesJSON.pais[i].imagen;
         image$$.alt = PaisesJSON.pais[i].imagen;
+        
 
         cardDiv$$.appendChild(titulo$$);
         cardDiv$$.appendChild(image$$);
@@ -41,15 +41,18 @@ const getPaises = async () => {
             comidaDiv$$.appendChild(comidaIngredientes$$);
             cardDiv$$.appendChild(comidaDiv$$)
 
-
+            comidaDecripcion$$.classList.add(`texto`)
+            comidaIngredientes$$.classList.add(`texto`)
+            comidaDiv$$.classList.add(`comida`)
+            comidaDiv$$.classList.add(`comida${i}${y+1}`)
 
         }
-
+        cardDiv$$.classList.add(`pais${i+1}`)
+        cardDiv$$.classList.add(`pais`)
         paisesGallery$$.appendChild(cardDiv$$)
   }
 
 };
 getPaises();
 
-/* const paintPaises = (paises) => {
-  const paisesHTML = paises. */
+

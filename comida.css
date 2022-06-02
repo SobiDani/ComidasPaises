@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.pais{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3% 0 7% 0;
+
+}
+
+.texto{
+    width: 30em;
+    margin-bottom: 4%
+}
+
+/* .pais1{
+    background-image: ;
+} */
+
+.pais > img{
+    height: 20em;
+    padding: 0 5%;
+}
+
+.comida > img{
+    display: flex;
+    height: 15em;
+}
