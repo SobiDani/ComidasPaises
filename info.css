@@ -1,0 +1,122 @@
+*{
+font-family: 'Montserrat', sans-serif; 
+  
+}
+
+body {
+  background-image: url("https://333j0m3ycbcd26cb2f14cdg6-wpengine.netdna-ssl.com/wp-content/uploads/2021/12/comida-colombiana-810x424.jpg");
+  background-position: cover;
+  background-attachment: fixed;
+  background-size:cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://333j0m3ycbcd26cb2f14cdg6-wpengine.netdna-ssl.com/wp-content/uploads/2021/12/comida-colombiana-810x424.jpg");
+
+  color: white;
+  margin-top: 4%;
+  
+}
+
+p {
+  margin: 1% 3%;
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2% 3%;
+  font-size: 2rem;
+}
+
+section {
+  margin-bottom: 4%;
+}
+
+/*footer*/
+
+footer {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.sociales {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 38vw;
+}
+
+img {
+  width: 25%;
+  min-width: 35px;
+}
+.copy {
+  margin-left: 8%;
+  font-size: 1.3rem;
+}
+
+.adicional {
+  width: 49vw;
+}
+
+a {
+  padding: 3%;
+  color: white;
+}
+
+.todofooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+@media screen and (max-width:768px) {
+  .todofooter{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .sociales{
+  display: flex;
+  flex-direction: row;
+ }
+  footer{
+    min-height: fit-content;
+    margin-bottom: 15%;
+
+    display: flex;
+    flex-direction: column;
+  
+   }
+   .adicional{
+    display: flex;
+    flex-direction: column;
+
+    
+   }
+   a{
+     font-size: 0.8rem;
+   }
+   .copy{
+     font-size: 0.6rem;
+   }
+   
+}
+
+
+
+
+
+
+

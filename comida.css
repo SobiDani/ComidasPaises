@@ -3,11 +3,14 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Montserrat', sans-serif 
 
 }
 
 
-
+html {
+    scroll-behavior: smooth;
+  }
 
 header {
     background-color: transparent;
@@ -152,3 +155,80 @@ body{
 #idpais{
     background-color: black;
 }
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    width: 38vw;
+  }
+  
+  .logoP {
+    width: 25%;
+  }
+  .copy {
+    margin-left: 8%;
+    font-size: 1.3rem;
+  }
+
+  .adicional {
+    width: 49vw;
+  }
+  
+  a {
+    padding: 3%;
+    color: red;
+  }
+  
+  .todofooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  
+  
+  @media screen and (max-width:768px) {
+    .todofooter{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .sociales{
+    display: flex;
+    flex-direction: row;
+   }
+    footer{
+      min-height: fit-content;
+      margin-bottom: 15%;
+      display: flex;
+      flex-direction: column;
+    
+     }
+     .adicional{
+      display: flex;
+      flex-direction: column;
+  
+     }
+     a{
+       font-size: 0.8rem;
+     }
+     .copy{
+       font-size: 0.6rem;
+     }
+     
+  }
